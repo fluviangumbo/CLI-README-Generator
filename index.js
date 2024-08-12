@@ -8,12 +8,11 @@ const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data) { //something wrong with this, was trying to use promise for fs.writeFile
-        try {
-            generateMarkdown(data);
-        } catch (err) {
-            console.log("Unable to write to the file.")
-        }
+    try {
+        fs.writeFileSync(filename, data);
+    } catch (err) {
+        console.log(err);
+        console.log("Unable to write to the file.");
     }
 }
 
@@ -21,7 +20,12 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt()
-        .then()
+        .then(
+            generateMarkdown(data);
+            renderLicenseBadge();
+            renderLicenseLink();
+            renderLicense
+        )
 }
 
 // Function call to initialize app
