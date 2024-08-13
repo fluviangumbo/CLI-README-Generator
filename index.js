@@ -53,7 +53,7 @@ const questions = [
 
 function writeToFile(fileName, data) {
     try {
-        fs.writeFileSync(filename, data);
+        fs.writeFileSync(fileName, data);
     } catch (err) {
         console.log(err);
         console.log("Unable to write to the file.");
@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions).then((response) =>
-            writeToFile('README.md', generateMarkdown(response))
+            writeToFile("README.md", generateMarkdown(response)) //I tried a variable dec with the generateMarkdown
         )
 }
 
