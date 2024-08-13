@@ -29,14 +29,19 @@ const questions = [
         name: 'contribute',
     },
     {
+        type: 'input',
+        message: 'How should your your project be tested?',
+        name: 'tests',
+    },
+    {
         type: 'list',
         message: 'Please pick one of the licensing options for your project.',
-        choices: ['MIT License', 'GNU GPLv3', 'Apache-2.0', 'BSD', 'None'],
+        choices: ['MIT', 'GNU GPLv3', 'Apache-2.0', 'BSD', 'None'],
         name: 'license',
     },
     {
         type: 'input',
-        message: 'What is your GitHub username?',
+        message: 'Put a link to your github.',
         name: 'github',
     },
     {
