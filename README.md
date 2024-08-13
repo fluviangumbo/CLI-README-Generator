@@ -3,7 +3,7 @@
 
 ## Descripton
 
-This tool will allow you to build a professional README for your project or repository based on the information that you enter at the command line.
+This tool will allow you to build a professional README for your project or repository based on the information that you enter at the command line. As a matter of fact, this README.md file was built using this application, so it should serve as a good sample of what you can use it to generate.
 
 ## Table of Contents
 1. [Installation](#installation)
