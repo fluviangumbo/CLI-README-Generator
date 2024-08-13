@@ -40,8 +40,11 @@ function generateMarkdown(data) {
     ${data.describe}
 
     ## Table of Contents
-
-    ${TOC} //WHAT TO DO HERE?
+    1. [Installation](#Installation)
+    2. [Usage](#Usage)
+    3. [Contributing](#Contributing)
+    4. [Tests](#Tests)
+    5. [Questions](#Questions)
 
     ## Installation
 
