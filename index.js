@@ -1,6 +1,6 @@
 import fs from 'fs';
 import inquirer from 'inquirer';
-import generateMarkdown from './utils/generateMarkdown';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 const questions = [
     {
@@ -32,6 +32,7 @@ const questions = [
         type: 'list',
         message: 'Please pick one of the licensing options for your project.',
         choices: ['MIT License', 'GNU GPLv3', 'Apache-2.0', 'BSD', 'None'],
+        name: 'license',
     },
     {
         type: 'input',
@@ -42,7 +43,7 @@ const questions = [
         type: 'input',
         message: 'What is your email?',
         name: 'email',
-    }
+    },
     {
         type: 'input',
         message: 'How should people reach you for questions?',
@@ -62,7 +63,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions).then((response) =>
-            writeToFile(`README.md`, generateMarkdown(response))
+            writeToFile('README.md', generateMarkdown(response))
         )
 }
 
