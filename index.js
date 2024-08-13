@@ -37,7 +37,17 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'How can people reach you for questions?',
+        message: 'What is your GitHub username?',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
+    }
+    {
+        type: 'input',
+        message: 'How should people reach you for questions?',
         name: 'question'
     }
 ];
