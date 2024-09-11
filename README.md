@@ -28,7 +28,7 @@ Link: https://www.mit.edu/~amini/LICENSE.md
 
 ## Contributing
 
-You can fork the repository on GitHub, and if you reach out with your proposed changes after making a pull request, we can add them to the main branch of the reopsitory if they are a helpful addition to the tool.
+You can fork the repository on GitHub, and if you reach out with your proposed changes after making a pull request, we can add them to the main branch of the repository if they are a helpful addition to the tool.
 
 ## Tests
 

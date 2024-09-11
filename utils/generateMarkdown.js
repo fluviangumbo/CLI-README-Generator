@@ -52,7 +52,7 @@ function generateMarkdown(data) {
    return `# ${data.title}
 ${renderLicenseBadge(data.license)}
 
-## Descripton
+## Description
 
 ${data.describe}
 
